@@ -1,15 +1,14 @@
 const assertEqual = require('./assertEqual');
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-const array = [2];
-const arrayWords = [];
-
-function tail(){
- 
- words.shift();
- array.shift();
- arrayWords.shift();
-  
+function tail(array) {
+if (array.length < 2) {
+    return array;
+} else {
+    return array.slice(1);
+    }
 }
+
+console.log(tail([5, 6, 7]))
+console.log(tail(["Yo Yo", "Lighthouse", "Labs"]))
 
 module.exports = tail;
