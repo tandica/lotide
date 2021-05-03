@@ -6,10 +6,9 @@ function assertEqual(actual, expected){
   }
 }
 
-//take a sentence as a wholePhraseing and determine how many times each letter is stated
+//take a sentence as a wholePhrase and determine how many times each letter is stated
 
 function countLetters(wholePhrase, phraseLetters){
-  let letterCount = 0;
   //loop through sentence
   for (let i = 0; i < wholePhrase.length; i++){
     //access items in string 
@@ -29,3 +28,5 @@ let sentence = 'lighthouse in the house';
 
  const result1 = countLetters(sentence, { "l": 0, "i": 0, "g": 0, "h": 0, "t": 0, "o": 0, "u": 0, "s": 0, "e": 0, "n": 0 });
  console.log(result1)
+
+ module.exports = countLetters; 

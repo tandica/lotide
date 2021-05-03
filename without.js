@@ -1,3 +1,5 @@
+const takeUntil = require("./takeUntil");
+
 function eqArrays(arr1, arr2){
   if (arr1.length === arr2.length){
     return true
@@ -38,3 +40,5 @@ let source = [7, 26, 38, 9, 20];
 //specify which item to remove
 let itemsToRemove = [9, 7];
 console.log(without(source,itemsToRemove));
+
+module.exports = without; 

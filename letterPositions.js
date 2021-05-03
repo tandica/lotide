@@ -43,3 +43,5 @@ let sentence = 'lighthouse in the house';
  console.log(result1)
 
  assertArraysEqual(letterPositions("hello").e, [1]);
+
+ module.exports = letterPositions; 

@@ -41,3 +41,5 @@ console.log(results1);
 assertArraysEqual(results1, ["ground", "control", "to", "major", "tom"]);
 assertArraysEqual(results1, ["control", "to", "major", "tom"]);
 assertArraysEqual(results1, ["control", "to", "major", "tom", "tom", "ground"]);
+
+module.exports = map; 
